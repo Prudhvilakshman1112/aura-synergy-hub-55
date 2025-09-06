@@ -8,6 +8,8 @@ import MentalCoach from "./pages/MentalCoach";
 import PhysicalCoach from "./pages/PhysicalCoach";
 import Roadmaps from "./pages/Roadmaps";
 import DayTracker from "./pages/DayTracker";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +22,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/mental" element={<MentalCoach />} />
           <Route path="/physical" element={<PhysicalCoach />} />
           <Route path="/roadmaps" element={<Roadmaps />} />
